@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">image is visible</h1>
+    <div>
+        <button onclick="func()">toggle button</button>
+    </div>
+    <img id="image" style=" margin-top: 20px; opacity: 1; height:100px; width: 100px;"src="https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" alt="">
+</body>
+<script>
+    let image=document.getElementById("image")
+    let heading=document.getElementById("heading")
+    function func()
+    {
+        let visi=image.style.opacity
+        if(visi==1)
+        {
+            image.style.opacity=0
+            heading.textContent="image is hidden"
+
+        }else{
+            image.style.opacity=1
+            heading.textContent="image is visible"
+
+        }
+
+    }
+
+</script>
+</html>
